@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(223, 186, 228);
+            color: #333;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c778e6;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 2000px;
+            margin: 30px auto;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        p { 
+            text-align: left;
+            padding-left: 15px;
+        }
+        h3 {
+            padding-left: 15px;
+            text-align: center;
+        }
+        .just {
+            background: #fef9ffe6;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .just:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #d27aec;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        /* Grid Layout for Education and Certifications */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .just ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        /* CSS Sprites for icons */
+        .cert-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url('icons-sprite.png');
+            background-size: cover;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Media Queries for Mobile */
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Collapse to a single column */
+            }
+        }
+
+        /* Additional styling for the timeline/degree information */
+        .degree-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .degree-info span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home &nbsp;</a>
+    <a href="about.html">About Me &nbsp;</a>
+    <a href="project.html">Project&nbsp;</a>
+    <a href="skill.html">Skill&nbsp;</a>
+    <a href="contact.html">Contact&nbsp;</a>
+    <a href="certificate.html">Education&nbsp;</a>
+    <a href="achievment.html">Achievement&nbsp;</a>
+    <a href="hobby.html">Hobby&nbsp;</a>
+</nav>
+
+<main>
+    <p>After high school graduation, my life has turned upside down! As I become a young adult, I have so many responsibilities to take care of. In this case, education is one of the most important fields that I've been pursuing after high school. See my educational background in detail...</p>
+</main>
+
+<h3>Background in Education</h3>
+
+<div class="grid-container">
+    <div class="just">
+        <p>Bachelor of Science in Information and Communication Technology (ICT)</p>
+        <div class="degree-info">
+            <span>Institution:</span> American University of Phnom Penh (AUPP)
+        </div>
+        <div class="degree-info">
+            <span>Start Year:</span> 2023
+        </div>
+        <div class="degree-info">
+            <span>Expected Graduation:</span> 2027
+        </div>
+    </div>
+
+    <div class="just">
+        <p>Bachelor of Literature in English Literature</p>
+        <div class="degree-info">
+            <span>Institution:</span> Institute of Foreign Language (IFL)
+        </div>
+        <div class="degree-info">
+            <span>Start Year:</span> 2025
+        </div>
+        <div class="degree-info">
+            <span>Expected Graduation:</span> 2029
+        </div>
+    </div>
+
+    <div class="just">
+        <p>Relevant courses and Short courses (completed & ongoing study)</p>
+        <ul>
+            <li><span class="cert-icon" style="background-position: 0 0;"></span>Meta Introduction to Front-End Development (Coursera)</li>
+            <li><span class="cert-icon" style="background-position: -20px 0;"></span>Chinese HSK 1, Peking University (Coursera)</li>
+            <li><span class="cert-icon" style="background-position: -40px 0;"></span>Meta Back-End Development, Python (Coursera)</li>
+            <li><span class="cert-icon" style="background-position: -60px 0;"></span>Python Complete Bootcamp (Udemy)</li>
+            <li><span class="cert-icon" style="background-position: -80px 0;"></span>Introduction to Information and Technology (AUPP)</li>
+            <li><span class="cert-icon" style="background-position: -100px 0;"></span>Java Programming</li>
+            <li><span class="cert-icon" style="background-position: -120px 0;"></span>Cloud Computing</li>
+            <li><span class="cert-icon" style="background-position: -140px 0;"></span>Cloud Operation</li>
+        </ul>
+    </div>
+
+    <div class="just">
+        <p>Certification of Course Completion</p>
+        <ul>
+            <li><span class="cert-icon" style="background-position: -160px 0;"></span>01-12-2024: AWS Cloud Computing Certification</li>
+            <li><span class="cert-icon" style="background-position: -180px 0;"></span>01-12-2024: AWS Cloud Operation Certification</li>
+            <li><span class="cert-icon" style="background-position: -200px 0;"></span>24-02-2025: Meta Introduction to Front-End Development</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="social-media">
+        <a href="#" class="footer-icons facebook">Facebook</a>
+        <a href="#" class="footer-icons twitter">Twitter</a>
+        <a href="#" class="footer-icons linkedin">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Page</title>
+    <style>
+         body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c778e6;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1500px;
+            margin: 30px auto;
+            background: rgb(240, 219, 252);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(156, 21, 21, 0.2);
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        #picture {
+            background-image: url('pic1.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 0px;
+            color: rgb(172, 28, 28);
+            border-radius: 10px;
+        }
+
+        #picture h2 {
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: #d27aec;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+            }
+
+            section {
+                text-align: center;
+            }
+
+            section img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            main {
+                display: block;
+            }
+
+            section img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        /* Fun Hobby Icons using a CSS Sprite */
+        .hobby-icon {
+            background-image: url('sprite1.png');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .hobby-icon.music {
+            background-position: 0 0;
+        }
+
+        .hobby-icon.reading {
+            background-position: -50px 0;
+        }
+
+        .hobby-icon.traveling {
+            background-position: -100px 0;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        section:hover h2 {
+            color: #c778e6;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home &nbsp;</a>
+    <a href="about.html">About Me &nbsp;</a>
+    <a href="project.html">Project&nbsp;</a>
+    <a href="skill.html">Skill&nbsp;</a>
+    <a href="contact.html">Contact&nbsp;</a>
+    <a href="certificate.html">Education&nbsp;</a>
+    <a href="achievment.html">Achievement&nbsp;</a>
+    <a href="hobby.html">Hobby&nbsp;</a>
+</nav>
+
+<main>
+    <p>Everybody has their own hobby, and in that case, I, myself also have some activities that I enjoy doing in my free time!</p>
+
+    <section>
+        <div class="hobby-icon music"></div>
+        <h2>Reading</h2>
+        <img src="pic1.jpg" alt="Reading">
+        <p>Books are my best friend! In my freetime, I love to read books so that I can get entertained and gain more resourceful knowledge.</p>
+    </section>    
+
+    <section>
+        <div class="hobby-icon reading"></div>
+        <h2>Listening to Music</h2>
+        <img src="pic2.jpg" alt="Listening to Music">
+        <p>Music is the medicine that can cure any sickness in our minds. Listening to music allows me to be free and refreshing for my brain. My favorite artist is Jom for his "Cinnamon" song.</p>
+    </section>
+
+    <section>
+        <div class="hobby-icon traveling"></div>
+        <h2>Traveling</h2>
+        <img src="pic3.jpg" alt="Traveling">
+        <p>People love traveling! And so do I. Traveling makes me feel adventurous and joyful while exploring and learning new things from the planet of ours.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="social-media">
+        <a href="#" class="facebook">Facebook</a>
+        <a href="#" class="twitter">Twitter</a>
+        <a href="#" class="linkedin">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+
+</body>
+</html>

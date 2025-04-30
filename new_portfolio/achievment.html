@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c778e6;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgb(240, 219, 252);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h3 {
+            padding-left: 15px;
+            color: #6a2d8b;
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        li {
+            background-color: rgb(246, 210, 255);
+            color: #333;
+            padding-left: 40px;
+            margin: 20px ;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+        }
+
+        li:hover {
+            background-color: rgba(194, 55, 194, 0.6);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0.8;
+        }
+
+        li::after {
+            content: "🏆";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: gold;
+            display: none;
+        }
+
+        li:hover::after {
+            display: block;
+        }
+
+        .section-divider {
+            background-size: cover;
+            background-position: center;
+            padding: 30px 0;
+            text-align: left;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .section-divider h3 {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: #d27aec;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                color: black;
+                background-color: white;
+                text-align: left;
+                padding: 20px;
+            }
+
+            nav, footer {
+                display: none;
+            }
+
+            main {
+                margin: 0;
+                box-shadow: none;
+                background: none;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            li {
+                font-size: 16px;
+                margin: 10px 0;
+                background-color: transparent;
+                color: black;
+            }
+        }
+
+        /* Responsive Layout */
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            ul {
+                grid-template-columns: 1fr;
+            }
+
+            .section-divider h3 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Home &nbsp;</a>
+    <a href="about.html">About Me &nbsp;</a>
+    <a href="project.html">Project&nbsp;</a>
+    <a href="skill.html">Skill&nbsp;</a>
+    <a href="contact.html">Contact&nbsp;</a>
+    <a href="certificate.html">Education&nbsp;</a>
+    <a href="achievement.html">Achievement&nbsp;</a>
+    <a href="hobby.html">Hobby&nbsp;</a>
+</nav>
+
+<main>
+    <p>In this page, I will demonstrate all of my achievements and awards that I have received over the years.</p>
+</main>
+
+<section class="section-divider">
+    <h3>Academic Achievement</h3>
+    <ul>
+        <li>Passed entrance exam at IFL</li>
+        <li>Won a full-funded scholarship at American University of Phnom Penh in 2023</li>
+        <li>Won a full-funded scholarship at Limkokwing University of Cambodia in 2023</li>
+        <li>Won a 30% scholarship at Pannasastra University of Cambodia in 2023</li>
+        <li>Won a Khmer writing contest in 2020</li>
+        <li>Won an English writing contest in 2020</li>
+    </ul>
+</section>
+
+<section class="section-divider">
+    <h3>Volunteer Work</h3>
+    <ul>
+        <li>Volunteer at CJCC for Kizuna Festival</li>
+        <li>Volunteer at CJCC for Tanabata Festival</li>
+        <li>Volunteer at CFFF for Registration Coordinator</li>
+    </ul>
+</section>
+
+<section class="section-divider">
+    <h3>Workshop</h3>
+    <ul>
+        <li>Participated in ICT Bootcamp at NICC</li>
+        <li>Participated in Content Creation at AUPP</li>
+        <li>Participated in How to Start a Business at AUPP</li>
+    </ul>
+</section>
+
+<footer>
+    <div class="social-media">
+        <a href="#" class="footer-icons facebook">Facebook</a>
+        <a href="#" class="footer-icons twitter">Twitter</a>
+        <a href="#" class="footer-icons linkedin">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+
+</body>
+</html>
